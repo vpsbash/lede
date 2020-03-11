@@ -14,10 +14,10 @@ jobs:
           sudo apt install curl
           mkdir 1
           sudo curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s full >> 1/1.sh
-      - name : Upload artifact
-          uses: actions/upload-artifact@master
-          with:
-            name: 1
-            path: 1
+      - name: Upload artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: 1
+          path: 1
         
     
