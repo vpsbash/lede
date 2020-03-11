@@ -10,8 +10,9 @@ jobs:
           ref: master
       - name: 1
         run: |
-          sudo apt update
-          sudo apt install curl
+          sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d
+          sudo apt update -E
+          sudo apt install curl -E
           mkdir 1
           sudo curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s full >> 1/1.sh
       - name: Upload artifact
