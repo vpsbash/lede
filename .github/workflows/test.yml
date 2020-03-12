@@ -12,11 +12,6 @@ jobs:
         run: |
           curl myip.ipip.net
           mkdir 1
-          sudo curl -fsL https://ilemonra.in/LemonBenchIntl | sudo bash -s full >> 1/1.sh
-      - name: Upload artifact
-        uses: actions/upload-artifact@master
-        with:
-          name: 1
-          path: 1
-        
+          sudo curl -fsL https://ilemonra.in/LemonBenchIntl | sudo bash -s full 
+
     
