@@ -7,9 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
-        with:
-          ref: master
-      - name: SSH connection to Actions
-        uses: vpsbash/debugger-action@master
+      - run: |
+          pwd
+          cd ~
+          pwd
